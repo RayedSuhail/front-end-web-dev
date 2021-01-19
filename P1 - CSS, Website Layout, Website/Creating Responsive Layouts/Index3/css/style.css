@@ -1,0 +1,68 @@
+.container{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 600px 600px 150px;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* Initially each element has its own row for small screens */
+    grid-template-areas: 
+    "hd"
+    "sd"
+    "main"
+    "ft";
+    border: 2px solid yellow;
+  }
+  /* add css for nested grid here */
+  #nestedgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    margin: 10px;
+    border: 1px solid black;
+    gap: 15px;
+    justify-content: center;
+    grid-template-areas: 
+    "txt1 txt2"
+    "txt3 txt4";
+  }
+  #one{
+    grid-area: txt1;
+  }
+  #two{
+    grid-area: txt2;
+  }
+  #three{
+    grid-area: txt3;
+  }
+  #four{
+    grid-area: txt4;
+  }
+  .box{
+      border: 1px solid red;
+      background: #F8FA9D;
+      }
+    .header{
+      /* row start/column start/ row end/ column end */
+      grid-area:hd;
+    }
+    .footer{
+      grid-area: ft;  
+    }
+    .sidebar{
+      grid-area: sd;
+    }
+    .content{
+      grid-area: main;
+    }
+  /* If Screen Is Wide Enough */
+  @media(min-width:900px){
+  .container{
+        display:grid;
+        grid-template-columns: 300px 300px 1fr;
+        grid-template-rows: 250px 600px;
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd"
+        "sd sd main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+        border: 2px solid red;
+    }
+  }
