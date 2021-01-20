@@ -1,0 +1,31 @@
+.blogcontainer{
+    display: grid;
+    grid-template-columns: 20vw 10vw;
+    grid-template-rows: 150px 300px 100px;
+    grid-template-areas: "ti ti"
+    "co ts"
+    "au au";
+    border: 2px solid #333;
+    background-color: #ccc;
+    padding: 10px;
+}
+
+.title{
+    border-bottom: 1px solid #111;
+    grid-area: ti;
+    text-decoration: underline;
+}
+
+.content{
+    border-right: 1px solid #222;
+    grid-area: co;
+}
+
+.timestamp{
+    grid-area: ts;
+}
+
+.author{
+    border-top: 1px solid #222;
+    grid-area: au;
+}
