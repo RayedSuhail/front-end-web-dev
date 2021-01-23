@@ -6,18 +6,45 @@
     justify-content: flex-start;
     align-items: center;
     border: 2px solid #111;
+    border-radius: 10px;
 }
 
-.header a{
+.header a.button:last-child{
+    border-right: none;
+}
+
+.header a.button{
     display: block;
-    width: 10ex;
+    width: 50%;
     height: 1.5em;
     font-size: 24px;
     text-align: center;
+    font-style: normal;
     border-right: 1px solid #222;
+    text-decoration: none;
 }
 
-.header a p{
+.header a.button:link{
+    color: #111;
+}
+
+.header a.button:visited{
+    color: #555;
+}
+
+.header a.button:hover{
+    background-color: #aaa;
+    color: #fff;
+    outline: none;
+    text-decoration: none;
+}
+
+.header a.button:active{
+    background-color: #111;
+    color: #fff;
+}
+
+.header a.button p{
     display: inline;
     vertical-align: middle;
 }

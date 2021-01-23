@@ -1,3 +1,20 @@
 @import "blogPost.css";
 @import "header.css";
 @import "footer.css";
+@import "typography.css";
+
+/* Going through the Chrome Dev Tools, the pixel width of a phone and tablet were found */
+
+/* 600 px is the max size for a handheld phone */
+
+/* 1024 is the max for a tablet */
+
+@media(min-width: 600px){
+    .header a.button{
+        width: 10ex;
+    }
+    .header a.button:last-child{
+        border-right: 1px solid #222;
+    }
+}
+
