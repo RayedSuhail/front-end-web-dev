@@ -1,6 +1,10 @@
-.blogcontainer{
+a.blogcontainer{
     display: grid;
-    grid-template-columns: 20vw 10vw;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    height: 550px;
+    grid-template-columns: 70% 30%;
     grid-template-rows: 150px 300px 100px;
     grid-template-areas: "ti ti"
     "co ts"
@@ -8,24 +12,61 @@
     border: 2px solid #333;
     background-color: #ccc;
     padding: 10px;
+    gap: 10px;
+    /* Removing text decorations of normal <a> elements */
+    text-decoration: none;
+    font-style: normal;
+    color: #111;
+    font-family: none;
 }
+
+/* Adjusting the hover and active pseudo-selectors */
+
+a.blogcontainer:hover{
+    text-decoration: none;
+}
+
+a.blogcontainer:active{
+    text-decoration: none;
+}
+
+a.blogcontainer:active h2, a.blogcontainer:active h3{
+    color: #fff;
+}
+
+a.blogcontainer:active .title, a.blogcontainer:active .content, a.blogcontainer:active .timestamp, a.blogcontainer:active .author{
+    border-color: #fff;
+}
+
+/* Editing each grid area */
 
 .title{
     border-bottom: 1px solid #111;
     grid-area: ti;
     text-decoration: underline;
+    padding: 20px;
 }
 
 .content{
     border-right: 1px solid #222;
     grid-area: co;
+    padding: 20px;
+    text-align: justify;
 }
 
 .timestamp{
     grid-area: ts;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    text-align: justify;
 }
 
 .author{
     border-top: 1px solid #222;
     grid-area: au;
+    font-style: italic;
+    font-family: Garamond, sans-serif;
+    text-align: end;
+    padding: 20px;
 }

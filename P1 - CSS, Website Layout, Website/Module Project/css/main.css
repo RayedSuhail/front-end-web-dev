@@ -2,6 +2,7 @@
 @import "header.css";
 @import "footer.css";
 @import "typography.css";
+@import "imageGallery.css";
 
 /* Going through the Chrome Dev Tools, the pixel width of a phone and tablet were found */
 
