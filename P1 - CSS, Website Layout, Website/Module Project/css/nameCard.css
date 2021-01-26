@@ -1,0 +1,13 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    padding: 10px 20px;
+}
+
+.cardcontainer{
+    padding: 5px 10px;
+}

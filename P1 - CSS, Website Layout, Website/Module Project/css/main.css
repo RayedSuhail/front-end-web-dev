@@ -3,6 +3,35 @@
 @import "footer.css";
 @import "typography.css";
 @import "imageGallery.css";
+@import "nameCard.css";
+
+.maincontainer{
+    word-wrap: break-word;
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: minmax(550px, auto), minmax(550px, auto), minmax(550px, auto);
+    gap: 20px;
+    grid-template-areas: "bd"
+    "bp1"
+    "bp2"
+    "bp3";
+}
+
+.bp1{
+    grid-area: bp1;
+}
+
+.bp2{
+    grid-area: bp2;
+}
+
+.bp3{
+    grid-area: bp3;
+}
+
+.desc{
+    grid-area: bd;
+}
 
 /* Going through the Chrome Dev Tools, the pixel width of a phone and tablet were found */
 
@@ -17,5 +46,15 @@
     .header a.button:last-child{
         border-right: 1px solid #222;
     }
+    .maincontainer{
+        /* word-wrap helps break the words down for smaller screens */
+        word-wrap: break-word;
+        display: grid;
+        grid-template-columns: 70% 20%;
+        grid-template-rows: minmax(550px, auto), minmax(550px, auto), minmax(550px, auto);
+        gap: 20px;
+        grid-template-areas: "bp1 bd"
+        "bp2 bd"
+        "bp3 bd";
+    }
 }
-
