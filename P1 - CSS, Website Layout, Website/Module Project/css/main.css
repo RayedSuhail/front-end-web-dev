@@ -1,3 +1,5 @@
+/* This CSS file defines the rules for the landing page of the blog */
+
 @import "blogPost.css";
 @import "header.css";
 @import "footer.css";
@@ -5,7 +7,10 @@
 @import "nameCard.css";
 @import "imageGallery.css";
 
-.maincontainer{
+/* The .maincontainer rule is for the content that will be placed between the header and footer */
+
+.maincontainer {
+    /* word-wrap helps break the words down for smaller screens */
     word-wrap: break-word;
     margin-top: 20px;
     display: grid;
@@ -15,23 +20,27 @@
     "bp";
 }
 
-.bp{
+/* The .bp class is used to place all the blog posts available in the blog */
+
+.bp {
     display: flex;
     flex-direction: column;
     grid-area: bp;
 }
 
-.bp > *{
+.bp > * {
     margin: 10px;
 }
 
-.desc{
+/* The .desc class is used to show just the names of all blog posts in the blog */
+
+.desc {
     grid-area: bd;
     display: flex;
     flex-direction: column;
 }
 
-.desc > a{
+.desc > a {
     border-bottom: 1px solid #777;
     margin: 5px 0px;
     text-decoration: none;
@@ -43,15 +52,14 @@
 
 /* 1024 is the max for a tablet */
 
-@media(min-width: 600px){
-    .header a.button{
+@media(min-width: 600px) {
+    .header .button {
         width: 10ex;
     }
-    .header a.button:last-child{
+    .header .button:last-child {
         border-right: 1px solid #222;
     }
-    .maincontainer{
-        /* word-wrap helps break the words down for smaller screens */
+    .maincontainer {
         word-wrap: break-word;
         display: grid;
         grid-template-columns: 70% 20%;

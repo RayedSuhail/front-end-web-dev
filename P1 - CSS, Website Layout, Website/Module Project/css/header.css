@@ -1,4 +1,6 @@
-.header{
+/* This CSS file defines the rules for the header that will be placed at the top of all the pages */
+
+.header {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -9,11 +11,11 @@
     border-radius: 10px;
 }
 
-.header a.button:last-child{
+.header .button:last-child {
     border-right: none;
 }
 
-.header a.button{
+.header .button {
     display: block;
     width: 50%;
     height: 1.5em;
@@ -24,27 +26,27 @@
     text-decoration: none;
 }
 
-.header a.button:link{
+.header .button:link {
     color: #111;
 }
 
-.header a.button:visited{
+.header .button:visited {
     color: #555;
 }
 
-.header a.button:hover{
+.header .button:hover {
     background-color: #aaa;
     color: #fff;
     outline: none;
     text-decoration: none;
 }
 
-.header a.button:active{
+.header .button:active {
     background-color: #111;
     color: #fff;
 }
 
-.header a.button p{
+.header .button p {
     display: inline;
     vertical-align: middle;
 }

@@ -1,4 +1,6 @@
-.card{
+/* This CSS file is to define rules for the card used to show the author's information */
+
+.card {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -8,48 +10,13 @@
     padding: 10px 20px;
 }
 
-.cardtext > *{
+.cardtext > * {
     text-align: center;
     margin: 5px 10px;
 }
 
-.social{
-    border-top: 2px solid #333;
-}
+/* The .social class are for the social links of the author */
 
-.fa{
-    padding: 20px;
-    font-size: 30px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-}
-  
-.fa:hover{
-    outline: none;
-    text-decoration: none;
-    background-color: #000;
-    color: #fff;
-}
-  
-.fa-facebook{
-    background: #3B5998;
-    color: white;
-}
-  
-.fa-twitter{
-    background: #55ACEE;
-    color: white;
-}
-  
-.fa-linkedin{
-    background: #007bb5;
-    color: white;
-}
-  
-.fa-instagram{
-    background: #125688;
-    color: white;
+.social {
+    border-top: 2px solid #333;
 }

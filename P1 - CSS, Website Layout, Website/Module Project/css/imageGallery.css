@@ -1,4 +1,6 @@
-.imgcontainer{
+/* This CSS file defines the rules for the image gallery that shows the cover art of three blog posts in the blog */
+
+.imgcontainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -8,35 +10,21 @@
     height: 300px;
 }
 
-.img1{
+.img1 {
     grid-area: img1;
     background-image: url("../images/image1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.img2{
+.img2 {
     grid-area: img3;
     background-image: url("../images/image2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.img3{
-    grid-area: img1;
-    background-image: url("../images/image3.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.img4{
-    grid-area: img3;
-    background-image: url("../images/image4.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.img5{
+.img5 {
     grid-area: img2;
     background-image: url("../images/image5.jpg");
     background-repeat: no-repeat;

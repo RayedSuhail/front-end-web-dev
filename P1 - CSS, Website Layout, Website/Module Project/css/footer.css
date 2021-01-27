@@ -1,4 +1,6 @@
-.footer{
+/* This CSS files defines the rules for the footer that will be placed at the end of all the pages */
+
+.footer {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
@@ -9,7 +11,7 @@
     border-radius: 10px;
 }
 
-.footer div{
+.footer div {
     padding: 10px 20px;
     width: 50%;
     justify-content: center;
@@ -17,6 +19,45 @@
     text-align: center;
 }
 
-.footer div:last-child{
+.footer div:last-child {
     border-left: 1px solid #333;
+}
+
+/* The following rules are for the social buttons in the footer and author card */
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+  
+.fa:hover {
+    outline: none;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+}
+  
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+  
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+  
+.fa-instagram {
+    background: #125688;
+    color: white;
 }

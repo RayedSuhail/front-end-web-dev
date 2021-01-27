@@ -1,6 +1,8 @@
+/* This CSS file defines the rules for the blog posts page */
+
 @import "main.css";
 
-.blog{
+.blog {
     display: grid;
     grid-template-columns: 90%;
     gap: 5px;
@@ -13,20 +15,20 @@
     align-content: center;
 }
 
-.blogcontent{
+.blogcontent {
     grid-area: bc;
     padding: 5px 10px;
 }
 
-.namecard{
+.namecard {
     grid-area: nc;
 }
 
-.recommendation{
+.recommendation {
     grid-area: rec;
 }
 
-.coverart{
+.coverart {
     width: 107%;
     margin: 10px -5%;
 }
@@ -37,8 +39,8 @@
 
 /* 1024 is the max for a tablet */
 
-@media(min-width: 600px){
-    .blog{
+@media(min-width: 600px) {
+    .blog {
         grid-template-columns: 60% 40%;
         grid-template-areas: "bc nc"
         "rec nc";

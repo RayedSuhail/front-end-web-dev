@@ -1,4 +1,6 @@
-a.blogcontainer{
+/* This CSS file defines the rules for the clickable blog post displayed on the landing page and the "Blogs" page */
+
+.blogcontainer {
     display: grid;
     width: 93.5%;
     grid-template-columns: 70% 30%;
@@ -17,53 +19,53 @@ a.blogcontainer{
     font-family: none;
 }
 
-/* Adjusting the hover and active pseudo-selectors */
-
-a.blogcontainer:hover{
+.blogcontainer:hover {
     box-shadow: 2px 2px 0px 2px #444, -2px -2px 0px 2px #444, -2px 2px 0px 2px #444, 2px -2px 0px 2px #444;
     outline: none;
     text-decoration: none;
 }
 
-a.blogcontainer:active{
+.blogcontainer:active {
     box-shadow: 2px 2px 0px 2px #444, -2px -2px 0px 2px #444, -2px 2px 0px 2px #444, 2px -2px 0px 2px #444;
     outline: none;
     text-decoration: none;
 }
 
-a.blogcontainer:active h2, 
-a.blogcontainer:active h3{
+/* Overriding the rules defined in the typography.css file for the elements used in the blog container */
+
+.blogcontainer:active h2, 
+.blogcontainer:active h3 {
     color: #fff;
 }
 
-a.blogcontainer:active .title, 
-a.blogcontainer:active .content, 
-a.blogcontainer:active .timestamp, 
-a.blogcontainer:active .author{
+.blogcontainer:active .title, 
+.blogcontainer:active .content, 
+.blogcontainer:active .timestamp, 
+.blogcontainer:active .author {
     border-color: #fff;
 }
 
 /* Editing each grid area */
 
-.title{
+.title {
     border-bottom: 1px solid #111;
     grid-area: ti;
     text-decoration: underline;
     padding: 10px;
 }
 
-.content{
+.content {
     border-right: 1px solid #222;
     grid-area: co;
     padding: 5px 10px;
 }
 
-.timestamp{
+.timestamp {
     grid-area: ts;
     padding: 5px 10px;
 }
 
-.author{
+.author {
     border-top: 1px solid #222;
     grid-area: au;
     font-style: italic;
