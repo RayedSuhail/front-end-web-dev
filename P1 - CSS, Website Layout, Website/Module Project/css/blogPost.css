@@ -2,7 +2,7 @@ a.blogcontainer{
     display: grid;
     width: 93.5%;
     grid-template-columns: 70% 30%;
-    grid-template-rows: minmax(150px, auto) minmax(300px, auto) minmax(100px, auto);
+    grid-template-rows: minmax(75px, auto) minmax(100px, auto) minmax(75px, auto);
     grid-template-areas: "ti ti"
     "co ts"
     "au au";

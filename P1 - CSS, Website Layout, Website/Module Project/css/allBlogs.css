@@ -1,0 +1,13 @@
+@import "blogPage.css";
+
+.bloglist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bloglist > *{
+    margin: 10px 0px;
+    width: 110%;
+}

@@ -1,0 +1,46 @@
+@import "main.css";
+
+.blog{
+    display: grid;
+    grid-template-columns: 90%;
+    gap: 5px;
+    word-wrap: break-word;
+    grid-template-areas: "bc"
+    "nc"
+    "rec";
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.blogcontent{
+    grid-area: bc;
+    padding: 5px 10px;
+}
+
+.namecard{
+    grid-area: nc;
+}
+
+.recommendation{
+    grid-area: rec;
+}
+
+.coverart{
+    width: 107%;
+    margin: 10px -5%;
+}
+
+/* Going through the Chrome Dev Tools, the pixel width of a phone and tablet were found */
+
+/* 600 px is the max size for a handheld phone */
+
+/* 1024 is the max for a tablet */
+
+@media(min-width: 600px){
+    .blog{
+        grid-template-columns: 60% 40%;
+        grid-template-areas: "bc nc"
+        "rec nc";
+    }
+}

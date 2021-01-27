@@ -2,35 +2,39 @@
 @import "header.css";
 @import "footer.css";
 @import "typography.css";
-@import "imageGallery.css";
 @import "nameCard.css";
+@import "imageGallery.css";
 
 .maincontainer{
     word-wrap: break-word;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 90%;
-    grid-template-rows: minmax(550px, auto), minmax(550px, auto), minmax(550px, auto);
     gap: 20px;
     grid-template-areas: "bd"
-    "bp1"
-    "bp2"
-    "bp3";
+    "bp";
 }
 
-.bp1{
-    grid-area: bp1;
+.bp{
+    display: flex;
+    flex-direction: column;
+    grid-area: bp;
 }
 
-.bp2{
-    grid-area: bp2;
-}
-
-.bp3{
-    grid-area: bp3;
+.bp > *{
+    margin: 10px;
 }
 
 .desc{
     grid-area: bd;
+    display: flex;
+    flex-direction: column;
+}
+
+.desc > a{
+    border-bottom: 1px solid #777;
+    margin: 5px 0px;
+    text-decoration: none;
 }
 
 /* Going through the Chrome Dev Tools, the pixel width of a phone and tablet were found */
@@ -51,10 +55,7 @@
         word-wrap: break-word;
         display: grid;
         grid-template-columns: 70% 20%;
-        grid-template-rows: minmax(550px, auto), minmax(550px, auto), minmax(550px, auto);
         gap: 20px;
-        grid-template-areas: "bp1 bd"
-        "bp2 bd"
-        "bp3 bd";
+        grid-template-areas: "bp bd";
     }
 }

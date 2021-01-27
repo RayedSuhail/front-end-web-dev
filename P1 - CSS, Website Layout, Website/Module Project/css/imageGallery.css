@@ -5,6 +5,7 @@
     grid-template-areas: "img1 img2"
     "img3 img2";
     gap: 10px;
+    height: 300px;
 }
 
 .img1{
