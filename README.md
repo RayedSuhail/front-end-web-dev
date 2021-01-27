@@ -26,3 +26,8 @@ The description below gives a summary of the work learned in the lesson:
   - **index2:** Setting up a grid and playing it in specific grid-area column/row (actually uses named areas but the main concept was as before).
   - **index3:** Setting up grid and placing <div> in the specific named grid-area
   - **index4:** Basic layout for a blog landing page.
+- Module Project
+  - **css:** Folder containing all the CSS files used in the project
+  - **images:** Folder containing all the images used in the project
+  - **pages:** Folder containing all the HTML files used in the project (The blogPost folder contains HTML files for each blog post).
+  - See the live demo of the project <a href="https://ranchestertalon.github.io/front-end-web-dev/P1%20-%20CSS,%20Website%20Layout,%20Website/Module%20Project/pages/mainPage.html">here</a>
