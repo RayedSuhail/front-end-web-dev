@@ -25,6 +25,12 @@
 
 /* The following rules are for the social buttons in the footer and author card */
 
+/* The basis of these CSS rules were referenced from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons2 */
+
+/* The following site gave the above link: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
+
+/* It was accessed on 27th January at 1818 hours (GMT+0300) */
+
 .fa {
     padding: 20px;
     font-size: 30px;

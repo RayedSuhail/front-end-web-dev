@@ -1,5 +1,11 @@
 /* This CSS file is to define rules for the card used to show the author's information */
 
+/* The basis of these CSS rules were referenced from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cards */
+
+/* The following site gave the above link: https://www.w3schools.com/howto/howto_css_cards.asp */
+
+/* It was accessed on 26th January at 2301 hours (GMT+0300) */
+
 .card {
     display: flex;
     flex-direction: column;
