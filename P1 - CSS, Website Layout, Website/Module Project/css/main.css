@@ -53,10 +53,10 @@
 /* 1024 is the max for a tablet */
 
 @media(min-width: 600px) {
-    .header .button {
+    header .button {
         width: 10ex;
     }
-    .header .button:last-child {
+    header .button:last-child {
         border-right: 1px solid #222;
     }
     .maincontainer {

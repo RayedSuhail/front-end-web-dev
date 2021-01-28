@@ -1,6 +1,6 @@
 /* This CSS files defines the rules for the footer that will be placed at the end of all the pages */
 
-.footer {
+footer {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
@@ -11,7 +11,7 @@
     border-radius: 10px;
 }
 
-.footer div {
+footer div {
     padding: 10px 20px;
     width: 50%;
     justify-content: center;
@@ -19,7 +19,7 @@
     text-align: center;
 }
 
-.footer div:last-child {
+footer div:last-child {
     border-left: 1px solid #333;
 }
 

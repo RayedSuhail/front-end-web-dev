@@ -1,0 +1,9 @@
+/* This CSS file defines the rules for the HTML page that will be shown in case a link does not have a destination yet */
+
+@import "main.css";
+
+h1 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}

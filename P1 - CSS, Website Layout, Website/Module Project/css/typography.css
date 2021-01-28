@@ -76,14 +76,18 @@ a:active {
 blockquote {
     display: flex;
     flex-direction: column;
-    width: 80%;
     justify-content: center;
     font-style: italic;
     font-weight: 100;
+    border: 2px dotted #444;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 20px 5%;
 }
 
 blockquote p {
     font-family: Georgia, sans-serif;
+    font-size: 22px;
 }
 
 /* The name of the person who said the quote will be right-aligned */
@@ -91,4 +95,5 @@ blockquote p {
 blockquote p:last-child {
     font-family: Garamond, sans-serif;
     text-align: right;
+    border-top: 1px dashed #222;
 }
