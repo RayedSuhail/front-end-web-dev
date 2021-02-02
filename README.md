@@ -30,4 +30,4 @@ The description below gives a summary of the work learned in the lesson:
   - **css:** Folder containing all the CSS files used in the project
   - **images:** Folder containing all the images used in the project
   - **pages:** Folder containing all the HTML files used in the project (The blogPost folder contains HTML files for each blog post).
-  - See the live demo of the project <a href="https://ranchestertalon.github.io/front-end-web-dev/P1%20-%20CSS,%20Website%20Layout,%20Website/Module%20Project/pages/mainPage.html">here</a>
+  - See the live demo of the project <a href="https://ranchestertalon.github.io/front-end-web-dev/P1%20-%20CSS,%20Website%20Layout,%20Website/Module%20Project/index.html">here</a>
