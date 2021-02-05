@@ -2,7 +2,7 @@
 
 ## Current Module: **JavaScript & The DOM**
 
-### Ongoing Lesson: *The Document Object Model*
+### Ongoing Lesson: *Working with Browser Events*
 
 This repo is keeping track of the work being done alongside the Udacity course. All files and changes created for the course will be available, along with additional files that were used in the course.
 
@@ -34,6 +34,12 @@ The description below gives a summary of the work learned in the lesson:
 
 #### P2 - JavaScript & The DOM
 
+- Creating Content with JavaScript
+  - course-JS-and-the-DOM
+    - Contains the repository that was cloned of the Udacity front page.
+  - Modifying Content
+    - Each file in this folder are the console commands and outputs that were run on the index.html file in other folder.
 - Syntax
   - Each file teaches a new aspect of ES6 that had been asked to be completed as a quiz within the lesson.
 - The Document Object Model
+  - No files as mostly it was just noting stuff down from the course.
