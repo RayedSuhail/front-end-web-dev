@@ -2,7 +2,7 @@
 
 ## Current Module: **JavaScript & The DOM**
 
-### Ongoing Lesson: *Working with Browser Events*
+### Ongoing Lesson: *Performance*
 
 This repo is keeping track of the work being done alongside the Udacity course. All files and changes created for the course will be available, along with additional files that were used in the course.
 
@@ -43,3 +43,5 @@ The description below gives a summary of the work learned in the lesson:
   - Each file teaches a new aspect of ES6 that had been asked to be completed as a quiz within the lesson.
 - The Document Object Model
   - No files as mostly it was just noting stuff down from the course.
+- Working with Browser Events
+  - **listen_event.js:** File to show the code to listen to an event in the browser. Other code related stuff is noted down for reference.
