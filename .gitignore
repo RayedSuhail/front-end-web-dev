@@ -20,3 +20,6 @@
 
 # Ignore .pdf files
 *.pdf
+
+# Ignore the base project files from the repo https://github.com/udacity/fend/tree/refresh-2019
+fend/
