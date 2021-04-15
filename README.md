@@ -1,8 +1,8 @@
 # Udacity Front End Web Developer Nanodegree Program
 
-## Current Module: **JavaScript & The DOM**
+## Current Module: **Web APIs and Asynchronous Apps**
 
-### Ongoing Lesson: *Performance*
+### Ongoing Lesson: *Module Project*
 
 This repo is keeping track of the work being done alongside the Udacity course. All files and changes created for the course will be available, along with additional files that were used in the course.
 
@@ -45,3 +45,14 @@ The description below gives a summary of the work learned in the lesson:
   - No files as mostly it was just noting stuff down from the course.
 - Working with Browser Events
   - **listen_event.js:** File to show the code to listen to an event in the browser. Other code related stuff is noted down for reference.
+
+#### P3 - Web APIs and Asynchronous Apps
+
+- Asynchronous JavaScript
+  - exercise1/exercise2/exercise3
+    - Folders containing the client and server side code for the exercises in the lesson.
+  - **fetchAPIExample.js:** An example to use fetch API to make GET requests
+- HTTP Requests and Routes
+  - Contains client and server files to make GET and POST requests and how to properly route paths
+- Node and Express Environment
+  - Basic setup of an Express environment
