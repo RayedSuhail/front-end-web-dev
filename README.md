@@ -39,6 +39,9 @@ The description below gives a summary of the work learned in the lesson:
     - Contains the repository that was cloned of the Udacity front page.
   - Modifying Content
     - Each file in this folder are the console commands and outputs that were run on the index.html file in other folder.
+- Module Project
+  - Contains all files related to the module project.
+  - See the live demo of the project <a href="https://ranchestertalon.github.io/front-end-web-dev/P2%20-%20JavaScript%20&%20The%20DOM/Module%20Project/index.html">here</a>.
 - Syntax
   - Each file teaches a new aspect of ES6 that had been asked to be completed as a quiz within the lesson.
 - The Document Object Model
@@ -56,5 +59,6 @@ The description below gives a summary of the work learned in the lesson:
   - Contains client and server files to make GET and POST requests and how to properly route paths.
 - Module Project
   - Contains all files related to the module project.
+  - See instructions to run this project <a href="https://ranchestertalon.github.io/front-end-web-dev/P3%20-%20Web%20APIs%20and%20Asynchronous%20Apps/Module%20Project/weather-journal-app/README.md">here</a>.
 - Node and Express Environment
   - Basic setup of an Express environment.
