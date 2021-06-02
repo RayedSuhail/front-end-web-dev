@@ -8,7 +8,7 @@ This repo is keeping track of the work being done alongside the Udacity course. 
 
 The description below gives a summary of the work learned in the lesson:
 
-#### P1 - CSS, Website Layout, Website
+## P1 - CSS, Website Layout, Website
 
 - Creating Responsive Layouts
   - **Index1:** Two pages that can be navigated to which has a layout that can be utilized for blogs. Also contains images.
@@ -32,7 +32,7 @@ The description below gives a summary of the work learned in the lesson:
   - **pages:** Folder containing all the HTML files used in the project (The blogPost folder contains HTML files for each blog post).
   - See the live demo of the project <a href="https://ranchestertalon.github.io/front-end-web-dev/P1%20-%20CSS,%20Website%20Layout,%20Website/Module%20Project/index.html">here</a>.
 
-#### P2 - JavaScript & The DOM
+## P2 - JavaScript & The DOM
 
 - Creating Content with JavaScript
   - course-JS-and-the-DOM
@@ -49,7 +49,7 @@ The description below gives a summary of the work learned in the lesson:
 - Working with Browser Events
   - **listen_event.js:** File to show the code to listen to an event in the browser. Other code related stuff is noted down for reference.
 
-#### P3 - Web APIs and Asynchronous Apps
+## P3 - Web APIs and Asynchronous Apps
 
 - Asynchronous JavaScript
   - exercise1/exercise2/exercise3
