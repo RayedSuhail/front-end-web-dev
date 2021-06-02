@@ -24,3 +24,4 @@
 # Ignore the base project files from the repo https://github.com/udacity/fend/tree/refresh-2019
 fend/
 node_modules/
+package-lock.json

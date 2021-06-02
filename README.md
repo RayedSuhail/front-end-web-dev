@@ -51,8 +51,10 @@ The description below gives a summary of the work learned in the lesson:
 - Asynchronous JavaScript
   - exercise1/exercise2/exercise3
     - Folders containing the client and server side code for the exercises in the lesson.
-  - **fetchAPIExample.js:** An example to use fetch API to make GET requests
+  - **fetchAPIExample.js:** An example to use fetch API to make GET requests.
 - HTTP Requests and Routes
-  - Contains client and server files to make GET and POST requests and how to properly route paths
+  - Contains client and server files to make GET and POST requests and how to properly route paths.
+- Module Project
+  - Contains all files related to the module project.
 - Node and Express Environment
-  - Basic setup of an Express environment
+  - Basic setup of an Express environment.
