@@ -1,8 +1,8 @@
 # Udacity Front End Web Developer Nanodegree Program
 
-## Current Module: **Web APIs and Asynchronous Apps**
+## Current Module: **Build Tools and Single Page Web Apps**
 
-### Ongoing Lesson: *Module Project*
+### Ongoing Lesson: *Basics of Webpack*
 
 This repo is keeping track of the work being done alongside the Udacity course. All files and changes created for the course will be available, along with additional files that were used in the course.
 
@@ -62,3 +62,8 @@ The description below gives a summary of the work learned in the lesson:
   - See instructions to run this project <a href="https://ranchestertalon.github.io/front-end-web-dev/P3%20-%20Web%20APIs%20and%20Asynchronous%20Apps/Module%20Project/weather-journal-app/README.md">here</a>.
 - Node and Express Environment
   - Basic setup of an Express environment.
+
+## P4 - Build Tools and Single Page Web Apps
+
+- Workspace
+  - Conatins the web app that is developed along with the lesson
