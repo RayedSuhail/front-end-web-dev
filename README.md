@@ -2,7 +2,7 @@
 
 ## Current Module: **Build Tools and Single Page Web Apps**
 
-### Ongoing Lesson: *Basics of Webpack*
+### Ongoing Lesson: *Sass and Webpack*
 
 This repo is keeping track of the work being done alongside the Udacity course. All files and changes created for the course will be available, along with additional files that were used in the course.
 
