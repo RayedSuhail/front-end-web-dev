@@ -66,4 +66,7 @@ The description below gives a summary of the work learned in the lesson:
 ## P4 - Build Tools and Single Page Web Apps
 
 - Workspace
-  - Conatins the web app that is developed along with the lesson
+  - fend-webpack-content
+    - Workspace files for setting up webpack for our app
+  - fend-webpack-sass
+    - Workspace files for setting up Sass for our app
