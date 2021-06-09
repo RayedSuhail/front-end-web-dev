@@ -1,8 +1,8 @@
 # Udacity Front End Web Developer Nanodegree Program
 
-## Current Module: **Build Tools and Single Page Web Apps**
+## Current Module: **Evaluate a News Article with NLP**
 
-### Ongoing Lesson: *Sass and Webpack*
+### Ongoing Lesson: *Module Project*
 
 This repo is keeping track of the work being done alongside the Udacity course. All files and changes created for the course will be available, along with additional files that were used in the course.
 
