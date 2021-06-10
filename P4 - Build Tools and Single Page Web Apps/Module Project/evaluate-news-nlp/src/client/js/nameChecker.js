@@ -1,16 +1,24 @@
 function checkForName(inputText) {
     console.log("::: Running checkForName :::", inputText);
-    let names = [
-        "Picard",
-        "Janeway",
-        "Kirk",
-        "Archer",
-        "Georgiou"
-    ]
+    let words = {
+        'P+': 'strong positive',
+        'P': 'positive',
+        'NEU': 'neutral',
+        'N': 'negative',
+        'N+': 'strong negative',
+        'NONE': 'without',
 
-    if(names.includes(inputText)) {
-        alert("Welcome, Captain!")
+        'AGREEMENT': 'the different elements have the same polarity',
+        'DISAGREEMENT': 'there is disagreement between the different elements\' polarity',
+
+        'OBJECTIVE': 'objective remarks',
+        'SUBJECTIVE': 'subjective remarks',
+
+        'NONIRONIC': 'no ironic remarks',
+        'IRONIC': 'ironic remarks'
     }
+    inputText = words[inputText];
+    return inputText;
 }
 
 export { checkForName }
