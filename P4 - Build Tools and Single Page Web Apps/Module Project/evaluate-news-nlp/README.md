@@ -24,8 +24,4 @@ It would probably be good to first get your basic project setup and functioning.
 
 ## Setting up the App
 
-To run the app, start the Express server using `npm run start`
-
-## Deploying
-
-A great step to take with your finished project would be to deploy it! Unfortunately its a bit out of scope for me to explain too much about how to do that here, but checkout [Netlify](https://www.netlify.com/) or [Heroku](https://www.heroku.com/) for some really intuitive free hosting options.
+Install the dependencies needed by running `npm install`. To run the app, start the Express server using `npm run start`.
