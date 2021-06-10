@@ -3,12 +3,17 @@ async function handleSubmit(event) {
 
     // check what text was put into the form field
     let urlForNlp, formText = document.getElementById('query').value;
+    if (formText === '') {
+        alert('Please provide a query or a URL');
+        return;
+    }
 
+    // Checking whether the input text is an article URL or a query text
     if (formText.includes('://')) {
-        console.log('Sending query:', formText)
         urlForNlp = formText;
     } else {
-        console.log('Sending query not:', formText)
+        // The route will make a call to News API and
+        // get the URL for the first article that matches the query sent by user
         await fetch('http://localhost:8080/article', {
             method: 'POST',
             headers: {
@@ -18,10 +23,17 @@ async function handleSubmit(event) {
         })
             .then(res => res.json())
             .then(data => {
+                if (data.status === 404) {
+                    alert('The query has failed!\nPlease provide another query or use an article URL');
+                    return;
+                }
                 urlForNlp = data.url;
             })
             .catch(err => console.log('Error: ', err));
     }
+
+    // Whether the user enters a link or a query,
+    // the route will make a call to the Meaning Cloud API
     fetch('http://localhost:8080/nlp', {
         method: 'POST',
         headers: {
@@ -38,7 +50,7 @@ async function handleSubmit(event) {
             }
             document.getElementById('results').innerHTML = `The <a href='${data.articleUrl}'>article</a>
             has ${data.score_tag} where ${data.agreement}. It also has ${data.subjectivity} as well
-            as ${data.irony}.`
+            as ${data.irony}. This analysis is done with a confidence of ${data.confidence}%.`
         })
         .catch(err => console.log(err))
 
