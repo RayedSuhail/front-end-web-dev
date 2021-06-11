@@ -30,7 +30,7 @@ app.get('/', function (req, res) {
 });
 
 // designates what port the app will listen to for incoming requests
-app.listen(8080, function () {
+module.exports = app.listen(8080, function () {
     console.log('Example app listening on port 8080!')
 });
 
@@ -52,6 +52,7 @@ app.post('/nlp', async (req, res) => {
         .then(response => response.json())
         .then(({ score_tag, agreement, subjectivity, confidence, irony }) => {
             res.send({ score_tag, agreement, subjectivity, confidence, irony, articleUrl });
+            return;
         })
         .catch(error => res.status(500).json({ status: 500, message: error }));
 });
@@ -64,6 +65,7 @@ app.post('/article', async (req, res) => {
         .then(data => {
             if (data.totalResults === 0) {
                 res.status(404).json({ status: 404, message: 'No such articles found' });
+                return;
             } else {
                 url = data.articles[0].url;
             }
@@ -71,11 +73,14 @@ app.post('/article', async (req, res) => {
         .catch(err => {
             console.log('Error', err);
             res.status(500).json({ status: 500, message: 'A server error occured! Try again later' });
+            return;
         });
     console.log(url);
     res.send({url});
+    return;
 })
 
 app.get('/test', function (req, res) {
     res.send(mockAPIResponse)
 });
+

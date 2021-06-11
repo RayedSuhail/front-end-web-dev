@@ -1,5 +1,6 @@
 async function handleSubmit(event) {
     event.preventDefault();
+    const emailRegex = /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/g
 
     // check what text was put into the form field
     let urlForNlp, formText = document.getElementById('query').value;
@@ -9,7 +10,7 @@ async function handleSubmit(event) {
     }
 
     // Checking whether the input text is an article URL or a query text
-    if (formText.includes('://')) {
+    if (emailRegex.test(formText)) {
         urlForNlp = formText;
     } else {
         // The route will make a call to News API and
@@ -52,9 +53,7 @@ async function handleSubmit(event) {
             has ${data.score_tag} where ${data.agreement}. It also has ${data.subjectivity} as well
             as ${data.irony}. This analysis is done with a confidence of ${data.confidence}%.`
         })
-        .catch(err => console.log(err))
-
-    console.log("::: Form Submitted :::");
+        .catch(err => console.log(err));
 }
 
 export { handleSubmit }

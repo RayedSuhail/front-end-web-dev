@@ -1,5 +1,4 @@
 function checkForName(inputText) {
-    console.log("::: Running checkForName :::", inputText);
     const words = {
         'P+': 'strong positive',
         'P': 'positive',
