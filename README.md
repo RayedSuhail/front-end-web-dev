@@ -1,8 +1,8 @@
 # Udacity Front End Web Developer Nanodegree Program
 
-## Current Module: **Evaluate a News Article with NLP**
+## Current Module: **Career Services**
 
-### Ongoing Lesson: *Module Project*
+### Ongoing Lesson: *Industry Research*
 
 This repo is keeping track of the work being done alongside the Udacity course. All files and changes created for the course will be available, along with additional files that were used in the course.
 
