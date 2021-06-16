@@ -1,8 +1,8 @@
 # Udacity Front End Web Developer Nanodegree Program
 
-## Current Module: **Career Services**
+## Current Module: **Capstone**
 
-### Ongoing Lesson: *Industry Research*
+### Ongoing Lesson: *Project: FEND Capstone - Travel App*
 
 This repo is keeping track of the work being done alongside the Udacity course. All files and changes created for the course will be available, along with additional files that were used in the course.
 
@@ -70,3 +70,7 @@ The description below gives a summary of the work learned in the lesson:
     - Workspace files for setting up webpack for our app
   - fend-webpack-sass
     - Workspace files for setting up Sass for our app
+
+## P5 - Capstone
+
+- The directory is the final capstone project for the course

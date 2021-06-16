@@ -1,0 +1,17 @@
+body {
+    background-image: linear-gradient(#fff 10%,#07a 100%);
+    min-height: 100vh;
+    font-family: 'Oswald', sans-serif;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #f0d43a;
+    font-family: 'Oswald', sans-serif;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #f0d43a;
+    font-family: 'Oswald', sans-serif;
+}

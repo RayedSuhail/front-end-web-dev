@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Journal</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark mb-3">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1"><i class="fas fa-plane-departure"></i> Travel Companion</span>
+    </div>
+  </nav>
+  <div class="container-md">
+    <div class="mb-3 row">
+      <label for="city" class="col-sm-1 col-form-label">City</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="city">
+      </div>
+      <label for="travelDate" class="col-sm-2 col-form-label">Date of travel</label>
+      <div class="col-sm-4">
+        <input type="date" class="form-control" id="travelDate">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <button type="button" onclick="return Client.performSearch()" class="col-md-2 me-3 btn btn-success"><i class="fas fa-search"></i> Search</button>
+      <button type="button" onclick="return Client.saveTrip()" class="col-md-2 me-3 btn btn-secondary"><i class="far fa-save"></i> Save Trip</button>
+    </div>
+  </div>
+  <div class="container-md">
+    <section class="row" id="search-container">
+      Search
+    </section>
+    <section class="row" id="saved-container">
+      Saved
+    </section>
+  </div>
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js');
+      });
+    }
+  </script>
+</body>
+
+</html>
