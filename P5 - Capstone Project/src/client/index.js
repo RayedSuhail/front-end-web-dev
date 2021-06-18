@@ -5,6 +5,10 @@ import { deleteTrip } from './js/deleteTrip';
 
 import './styles/style.scss';
 
+if(!localStorage.getItem('trips')) {
+    localStorage.setItem('trips', JSON.stringify([]));
+}
+
 document.addEventListener('DOMContentLoaded', () => {Client.fetchTrips()});
 
 export {
