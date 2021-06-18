@@ -7,6 +7,7 @@ body {
 }
 
 .card {
+    max-width: 540px;
     img {
         max-width: 175px;
     }
@@ -22,4 +23,11 @@ body {
     /* Microsoft Edge */
     color: #f0d43a;
     font-family: 'Oswald', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 95%;
+        margin: auto;
+    }
 }
