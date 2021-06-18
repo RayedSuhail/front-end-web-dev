@@ -1,7 +1,15 @@
 body {
     background-image: linear-gradient(#fff 10%,#07a 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 100vh;
     font-family: 'Oswald', sans-serif;
+}
+
+.card {
+    img {
+        max-width: 175px;
+    }
 }
 
 :-ms-input-placeholder {

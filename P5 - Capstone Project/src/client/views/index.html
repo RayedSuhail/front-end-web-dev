@@ -18,30 +18,41 @@
       <span class="navbar-brand mb-0 h1"><i class="fas fa-plane-departure"></i> Travel Companion</span>
     </div>
   </nav>
-  <div class="container-md">
+  <form onsubmit="return Client.performSearch(event)" class="container-md">
     <div class="mb-3 row">
       <label for="city" class="col-sm-1 col-form-label">City</label>
       <div class="col-sm-4">
-        <input type="text" class="form-control" id="city">
+        <input type="text" required class="form-control" id="city">
       </div>
       <label for="travelDate" class="col-sm-2 col-form-label">Date of travel</label>
       <div class="col-sm-4">
-        <input type="date" class="form-control" id="travelDate">
+        <input type="date" required class="form-control" id="travelDate">
       </div>
     </div>
     <div class="mb-3 row">
-      <button type="button" onclick="return Client.performSearch()" class="col-md-2 me-3 btn btn-success"><i class="fas fa-search"></i> Search</button>
-      <button type="button" onclick="return Client.saveTrip()" class="col-md-2 me-3 btn btn-secondary"><i class="far fa-save"></i> Save Trip</button>
+      <button type="submit" onclick="return Client.performSearch(event)" onsubmit="return Client.performSearch(event)"
+        class="col-md-2 me-3 btn btn-success"><i class="fas fa-search"></i> Search</button>
     </div>
-  </div>
+  </form>
   <div class="container-md">
-    <section class="row" id="search-container">
-      Search
-    </section>
-    <section class="row" id="saved-container">
-      Saved
-    </section>
+    <section class="row" id="search-container"></section>
+    <section class="row" id="saved-container"></section>
   </div>
+  <script>
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1; //January is 0!
+    var yyyy = today.getFullYear();
+    if (dd < 10) {
+      dd = '0' + dd
+    }
+    if (mm < 10) {
+      mm = '0' + mm
+    }
+
+    today = yyyy + '-' + mm + '-' + dd;
+    document.getElementById("travelDate").setAttribute("min", today);
+  </script>
   <script>
     // Check that service workers are supported
     if ('serviceWorker' in navigator) {
