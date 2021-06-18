@@ -1,3 +1,5 @@
+// Get the stored trips from local storage and remove the trip that was called
+// and update the projectData in the server
 export const deleteTrip = async (destination, travelDate) => {
     let storedTrips = JSON.parse(localStorage.getItem('trips'));
     let filteredTrips = storedTrips.filter((item) => ((item.destination !== destination) || (item.travelDate !== travelDate)));
@@ -10,5 +12,7 @@ export const deleteTrip = async (destination, travelDate) => {
     })
         .then(res => res.json())
         .then(data => localStorage.setItem('trips', JSON.stringify(data)));
+        
+    // Repopulate the saved trips
     Client.fetchTrips();
 }

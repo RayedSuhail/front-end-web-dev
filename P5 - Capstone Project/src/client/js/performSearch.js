@@ -1,3 +1,4 @@
+// Performs search functionality for the provided data by the user
 export const performSearch = async (event) => {
     event.preventDefault();
     let tripDestination = {};
@@ -6,6 +7,8 @@ export const performSearch = async (event) => {
     const dateOfTravel = document.getElementById('travelDate').value;
     const diffTime = Math.abs(new Date(dateOfTravel) - new Date());
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+    // Make sure no input is left blank
     if (!query && !dateOfTravel) {
         alert('Please enter a query of a place to search for and the date of travel.');
         return;
@@ -16,6 +19,8 @@ export const performSearch = async (event) => {
         alert('Please provide a date of travel');
         return;
     }
+
+    // Fetch call that gets all relevant data regarding the trip from the server
     await fetch('http://localhost:3000/search', {
         method: 'POST',
         headers: {
@@ -27,8 +32,10 @@ export const performSearch = async (event) => {
         .then(data => {
             tripDestination = data.card;
         });
+
+    // Place the trip data in the document
     document.getElementById('search-container').innerHTML = `<h3>Search Result</h3><hr/>
-    <div class="card mb-3" style="max-width: 540px;">
+    <div class="card mb-3">
         <div class="row py-3 g-0">
             <div class="col-md-4">
                 <img src="${tripDestination.pixbay.pixabay.src}" alt="${tripDestination.pixbay.pixabay.alt}">

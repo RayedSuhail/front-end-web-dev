@@ -1,12 +1,18 @@
+// Populate the saved trips in the local storage
 export const fetchTrips = () => {
     let tripDestination = {};
     let storedTrips = JSON.parse(localStorage.getItem('trips'));
     document.getElementById('saved-container').innerHTML = '<h3>Saved Trips</h3><hr/>';
+    // Iterate through each trip entry
     storedTrips.map(async item => {
         const query = item.destination;
         const dateOfTravel = item.travelDate;
+
+        // Find how many days are left for the trip
         const diffTime = Math.abs(new Date(dateOfTravel) - new Date());
         const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+        // Fetch call that gets all relevant data for the trip
         await fetch('http://localhost:3000/search', {
             method: 'POST',
             headers: {
@@ -18,7 +24,9 @@ export const fetchTrips = () => {
             .then(data => {
                 tripDestination = data.card;
             });
-        document.getElementById('saved-container').innerHTML += `<div class="card mb-3" style="max-width: 540px;">
+            
+        // Add the trip details for this entry to the document
+        document.getElementById('saved-container').innerHTML += `<div class="card mb-3 me-3">
             <div class="row py-3 g-0">
                 <div class="col-md-4">
                     <img src="${tripDestination.pixbay.pixabay.src}" alt="${tripDestination.pixbay.pixabay.alt}">

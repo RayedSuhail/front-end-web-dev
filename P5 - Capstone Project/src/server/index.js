@@ -39,11 +39,13 @@ app.get('/all', (req, res) => {
     res.send(projectData);
 });
 
+// Replace projectData with the incoming information
 app.post('/all', (req, res) => {
     projectData = req.body;
     res.send(projectData);
 })
 
+// Place the new trip details into projectData
 app.put('/all', (req, res) => {
     if (!projectData.find(item => ((item.destination === req.body.destination) && (item.travelDate === req.body.travelDate)))) {
         projectData.push(req.body);
@@ -51,15 +53,19 @@ app.put('/all', (req, res) => {
     res.send(projectData);
 })
 
-// POST Route
+// Perform search functionality and get all relevant trip data from other routes
 app.post('/search', async (req, res) => {
     let query = req.body.query,
         diffDays = req.body.diffDays,
         tripDestination = {};
+
+    // Call to GeoNames API to get latitude and longitude of the location
     await fetch(`http://api.geonames.org/searchJSON?name=${query}&maxRows=1&username=${geonamesAPI}`)
         .then(resGeo => resGeo.json())
         .then(async geonames => {
             tripDestination['geonames'] = geonames.geonames[0];
+
+            // Fetch call to retrieve weather information of location
             await fetch('http://localhost:3000/temperature', {
                 method: 'POST',
                 headers: {
@@ -74,6 +80,8 @@ app.post('/search', async (req, res) => {
                 .then(resWeather => resWeather.json())
                 .then(async weatherbit => {
                     tripDestination['weatherbit'] = weatherbit.weatherbit;
+
+                    // Fetch call to get URL of an image of the location
                     await fetch('http://localhost:3000/pixbay', {
                         method: 'POST',
                         headers: {
@@ -93,10 +101,12 @@ app.post('/search', async (req, res) => {
         .catch(err => res.status(500).json({ status: 500, message: `Error: ${err}` }));
 });
 
+// Provide weather information based on the latitude and longitude and how far away the trip is
 app.post('/temperature', async (req, res) => {
     let lat = req.body.lat,
         lng = req.body.lng,
         days = req.body.days;
+    // Call to WeatherBit API to get weather information of the location on the day of the trip
     await fetch(`https://api.weatherbit.io/v2.0/forecast/daily?days=${days + 1}&lat=${lat}&lon=${lng}&key=${weatherAPI}`)
         .then(response => response.json())
         .then(data => {
@@ -105,8 +115,11 @@ app.post('/temperature', async (req, res) => {
         .catch(err => res.status(500).json({ status: 500, message: `Error: ${err}` }));
 });
 
+// Provide an image URL for the given location name
 app.post('/pixbay', async (req, res) => {
     let query = req.body.query;
+
+    // Call to Pixabay API to get the URL of an image of the location
     await fetch(`https://pixabay.com/api/?key=${pixabayAPI}&category=travel&orientation=vertical&q=${query}`)
         .then(response => response.json())
         .then(data => {
