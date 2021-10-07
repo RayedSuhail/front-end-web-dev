@@ -1,8 +1,8 @@
 # Udacity Front End Web Developer Nanodegree Program
 
-## Current Module: **Capstone**
+## Current Module: **COMPLETED!**
 
-### Ongoing Lesson: *Project: FEND Capstone - Travel App*
+### Ongoing Lesson: *COMPLETED!*
 
 This repo is keeping track of the work being done alongside the Udacity course. All files and changes created for the course will be available, along with additional files that were used in the course.
 
@@ -30,7 +30,7 @@ The description below gives a summary of the work learned in the lesson:
   - **css:** Folder containing all the CSS files used in the project.
   - **images:** Folder containing all the images used in the project.
   - **pages:** Folder containing all the HTML files used in the project (The blogPost folder contains HTML files for each blog post).
-  - See the live demo of the project <a href="https://ranchestertalon.github.io/front-end-web-dev/P1%20-%20CSS,%20Website%20Layout,%20Website/Module%20Project/index.html">here</a>.
+  - See the live demo of the project <a href="https://rayedsuhail.github.io/front-end-web-dev/P1%20-%20CSS,%20Website%20Layout,%20Website/Module%20Project/index.html">here</a>.
 
 ## P2 - JavaScript & The DOM
 
@@ -41,7 +41,7 @@ The description below gives a summary of the work learned in the lesson:
     - Each file in this folder are the console commands and outputs that were run on the index.html file in other folder.
 - Module Project
   - Contains all files related to the module project.
-  - See the live demo of the project <a href="https://ranchestertalon.github.io/front-end-web-dev/P2%20-%20JavaScript%20&%20The%20DOM/Module%20Project/index.html">here</a>.
+  - See the live demo of the project <a href="https://rayedsuhail.github.io/front-end-web-dev/P2%20-%20JavaScript%20&%20The%20DOM/Module%20Project/index.html">here</a>.
 - Syntax
   - Each file teaches a new aspect of ES6 that had been asked to be completed as a quiz within the lesson.
 - The Document Object Model
@@ -59,7 +59,7 @@ The description below gives a summary of the work learned in the lesson:
   - Contains client and server files to make GET and POST requests and how to properly route paths.
 - Module Project
   - Contains all files related to the module project.
-  - See instructions to run this project <a href="https://ranchestertalon.github.io/front-end-web-dev/P3%20-%20Web%20APIs%20and%20Asynchronous%20Apps/Module%20Project/weather-journal-app/README.md">here</a>.
+  - See instructions to run this project <a href="https://rayedsuhail.github.io/front-end-web-dev/P3%20-%20Web%20APIs%20and%20Asynchronous%20Apps/Module%20Project/weather-journal-app/README.md">here</a>.
 - Node and Express Environment
   - Basic setup of an Express environment.
 
